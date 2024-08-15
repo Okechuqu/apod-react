@@ -8,7 +8,6 @@ const App = () => {
   // State to control the modal visibility
   const [showModal, setShowModal] = useState(false);
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(false);
 
   const toggleModal = () => {
     setShowModal(!showModal);

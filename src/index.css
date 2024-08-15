@@ -1,7 +1,6 @@
-/* 
 @tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -33,10 +32,11 @@
 .imgContainer {
   display: flex;
   flex-direction: column;
+  max-height: 100vh;
 }
 
 .bgImage {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   flex: 1;
   object-fit: cover;
@@ -177,10 +177,12 @@ footer h1 {
     position: relative;
     inset: unset;
     min-width: 30%;
+    max-height: 100vh;
     box-shadow: 0 0 40px 1px #030615;
   }
 
   .sidebarContents {
     margin: unset;
+    width: 100%;
   }
 }
